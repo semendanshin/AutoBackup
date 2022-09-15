@@ -11,8 +11,6 @@ import deepdiff
 from datetime import datetime
 
 
-# github.com/firs-iln
-
 async def get_token(client_id, secret):
     async with yadisk_async.YaDisk(client_id, secret) as y:
         url = y.get_code_url()
